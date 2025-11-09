@@ -1,0 +1,27 @@
+header{
+background-color: darkslategray;
+color: white;
+text-align: center;
+}
+h1{
+color: darkslategray;
+text-align: center;
+}
+image{
+width: 150px;
+height: auto;
+box-shadow: 30px gray;
+}
+section{
+background-color: gray;
+color: black;
+}
+h2{
+display: block;
+border-bottom: solid black;
+}
+footer{
+background-color: darkslategray;
+color: white;
+text-align: center;
+}
