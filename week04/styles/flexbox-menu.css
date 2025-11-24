@@ -11,7 +11,7 @@ nav ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    max-width: 900px;
+    max-width: 100%;
     margin: 0 auto;
     justify-content: space-around;
     align-items: center;
