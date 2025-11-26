@@ -10,38 +10,45 @@ body {
     color: #333;
 }
 
-/* ===== HEADER ===== */
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr;
+    justify-content: space-around;
     align-items: center;
     padding: 15px 40px;
     background: #0a3d62;
 }
-
+section{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-content: center;
+    gap: 10px;
+    padding: 15px;
+}
+section figure{
+    text-align: center;
+    margin: 0;
+}
+section figure img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+section figcaption{
+margin-top: 8px;
+font-size: small;
+}
 header img {
     height: 60px;
     border-radius: 5px;
 }
 
-nav ul {
-    list-style: none;
+nav {
     display: flex;
+    list-style: none;
     gap: 25px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-nav ul li a:hover {
-    color: #f8c291;
-}
-
-/* ===== HERO SECTION ===== */
 .hero {
     position: relative;
     width: 100%;
@@ -49,13 +56,12 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
-.hero > img {
+.hero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* Hero dark overlay */
 .hero::after {
     content: "";
     position: absolute;
@@ -63,7 +69,6 @@ nav ul li a:hover {
     background: rgba(0, 0, 0, 0.45);
 }
 
-/* Hero text container */
 .hero-content {
     position: absolute;
     top: 50%;
@@ -75,7 +80,6 @@ nav ul li a:hover {
     z-index: 10;
 }
 
-/* Hero title */
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 20px;
@@ -83,7 +87,6 @@ nav ul li a:hover {
     font-weight: 700;
 }
 
-/* Hero article box */
 .hero-content article {
     background: rgba(255, 255, 255, 0.15);
     padding: 20px;
@@ -91,7 +94,6 @@ nav ul li a:hover {
     backdrop-filter: blur(4px);
 }
 
-/* Article image */
 .hero-content article img {
     width: 100%;
     max-width: 180px;
@@ -99,7 +101,6 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-/* ===== SECTIONS ===== */
 main section {
     padding: 40px 60px;
 }
@@ -110,7 +111,6 @@ main h2, main h3 {
     color: #0a3d62;
 }
 
-/* Remove incorrect <title> tags inside headings */
 main h2 title, main h3 title {
     display: none;
 }
@@ -120,11 +120,12 @@ main p {
     font-size: 1.1rem;
 }
 
-/* ===== FOOTER ===== */
 footer {
+    display: grid;
+    grid-template-columns: (3, 1fr);
     background: #0a3d62;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 20px 0;
     margin-top: 40px;
 }
@@ -134,18 +135,19 @@ footer p {
     font-size: 1.1rem;
 }
 
-footer .SocialMedia {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.SocialMedia {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: right;
+    gap: 50px;
 }
 
-footer .SocialMedia img {
-    width: 35px;
-    height: 35px;
+.SocialMedia img {
+    display: block;
+    align-items: end;
+    width: 15px;
+    height: 15px;
     transition: transform 0.3s ease;
 }
 
-footer .SocialMedia img:hover {
-    transform: scale(1.15);
-}
+
