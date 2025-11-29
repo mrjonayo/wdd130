@@ -1,153 +1,121 @@
+:root {
+    --primary-color: #055a05;
+    --secondary-color: #f4a261;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
+    --heading-font: "Georgia";
+    --body-font: sans-serif;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    color: #333;
+    font-family: var(--body-font);
+    color: var(--accent1-color);
 }
-
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
 header {
     display: grid;
-    grid-template-columns: 120px 1fr 1fr;
-    justify-content: space-around;
-    align-items: center;
-    padding: 15px 40px;
-    background: #0a3d62;
-}
-section{
-    display: grid;
     grid-template-columns: repeat(5, 1fr);
-    align-content: center;
-    gap: 10px;
-    padding: 15px;
-}
-section figure{
-    text-align: center;
-    margin: 0;
-}
-section figure img {
-    width: 150px;
-    height: auto;
-    display: block;
-}
-section figcaption{
-margin-top: 8px;
-font-size: small;
+    padding: 20px;
+    justify-content: space-between;
+    background: var(--secondary-color);
 }
 header img {
+    width: 60px;
     height: 60px;
     border-radius: 5px;
 }
-
 nav {
     display: flex;
-    list-style: none;
-    gap: 25px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+h1, h2 {
+    font-family: var(--heading-font);
+    background-color: var(--accent1-color);
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+nav, p, section, section1, article {
+    margin: 16px;
+    padding: 8px;
+}
+section1 {
+
+}
+section1 img {
+    float: right;
+    width: 125px;
+    border: 3px;
 }
 
+.sociamedia a {
+    text-decoration: none;
+}
 .hero {
     position: relative;
-    width: 100%;
-    height: 90vh;
-    overflow: hidden;
 }
-
 .hero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-.hero::after {
-    content: "";
+h1 {
     position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-}
-
-.hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    text-align: center;
-    max-width: 400px;
-    z-index: 10;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.hero-content article {
-    background: rgba(255, 255, 255, 0.15);
-    padding: 20px;
-    border-radius: 12px;
-    backdrop-filter: blur(4px);
-}
-
-.hero-content article img {
+    top: 20px;
     width: 100%;
-    max-width: 180px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: bisque;
 }
-
-main section {
-    padding: 40px 60px;
-}
-
-main h2, main h3 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #0a3d62;
-}
-
-main h2 title, main h3 title {
-    display: none;
-}
-
-main p {
-    max-width: 800px;
-    font-size: 1.1rem;
-}
-
-footer {
-    display: grid;
-    grid-template-columns: (3, 1fr);
-    background: #0a3d62;
+.hero article {
+    position: absolute;
+    padding: 10px;
+    top: 60%;
+    text-align: center;
     color: white;
-    text-align: left;
-    padding: 20px 0;
-    margin-top: 40px;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
 }
-
-footer p {
-    margin-bottom: 15px;
-    font-size: 1.1rem;
+.hero article img {
+    float: right;
+    width: 125px;
+    border: 3px;
+    padding: 3px
+    border: 4px black;
 }
-
-.SocialMedia {
+.figure1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: right;
-    gap: 50px;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
 }
-
-.SocialMedia img {
-    display: block;
-    align-items: end;
-    width: 15px;
-    height: 15px;
-    transition: transform 0.3s ease;
+figure img {
+    width: 150px;
+    border: 3px black;
 }
+figcaption {
+    margin-top: 8px;
+    font-size: small;
+    font-family: var(--body-font);
+}
+footer {
+    background-color: var(--secondary-color);
+    display: flex;
+}
+footer .socialmedia {
 
-
+}
+footer .socialmedia img {
+    width: 20px;
+    height: 20px;
+}
