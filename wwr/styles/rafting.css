@@ -98,9 +98,11 @@ h1 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-content: space-between;
+    grid-gap: 10px;
 }
 figure img {
     width: 150px;
+    height: 80%;
     border: 3px black;
 }
 figcaption {
@@ -111,6 +113,7 @@ figcaption {
 footer {
     background-color: var(--secondary-color);
     display: flex;
+    align-items: flex-end;
 }
 footer .socialmedia {
 
