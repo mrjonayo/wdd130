@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll-Form</title>
+    <link rel="Stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+    <main>
+        <form>
+            <div class="form-item column2">
+                <label for="fullname">Full name</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-item column2">
+                <label for="useremail">Email Address</label>
+                <input type="text" id="useremail" name="useremail" required>
+            </div>
+            <div class="form-item column1">
+                <label for="quantity">What is your Favourite Browser?</label>
+                <select name="browser" id="browser">
+                    <option value="1">Chrome</option>
+                    <option value="2">Edge</option>
+                    <option value="3">Safari</option>
+                    <option value="4">Others</option>
+                </select>
+            </div>
+            <div class="form-item column1">
+                <label for="pet">Do you have a pet?</label>
+                <input type="checkbox" id="pet" name="pet">
+            </div>
+            <label for="feedback">List the places you have lived:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Kaduna, Lagos, Abuja, Kano"></textarea>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
