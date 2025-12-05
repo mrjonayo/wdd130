@@ -23,6 +23,7 @@ header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     padding: 20px;
+    border: 3px black;
     justify-content: space-between;
     background: var(--secondary-color);
 }
@@ -32,21 +33,48 @@ header img {
     border-radius: 5px;
 }
 nav {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-start: end;
     justify-content: space-evenly;
     gap: 20px;
 }
 h1, h2 {
     font-family: var(--heading-font);
-    background-color: var(--accent1-color);
     text-align: center;
     padding: 20px;
-    color: white;
 }
-nav, p, section, section1, article {
+nav, section, section1, article {
     margin: 16px;
     padding: 8px;
+}
+p1, p {
+    position: relative;
+    text-align: center;
+}
+form {
+    width: 350px;
+    height: 350px;
+    position: ;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 2px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: #fff;  
+}
+button{
+    background-color: var(--accent2-color);
+    width: 300px;
+}
+fieldset, textarea {
+    width: 300px;
+    align-items: flex-end;
+
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    space
 }
 section1 img {
     float: right;
@@ -60,15 +88,16 @@ section1 img {
 .hero {
     position: relative;
 }
-h1 {
-    position: absolute;
-    top: 20px;
+.hero img {
     width: 100%;
-    padding: 16px;
+    height: 100%;
+    object-fit: cover;
+}
+.details {
+    position: relative;
+    padding: 5px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: bisque;
+    color: black;
 }
 .hero article {
     position: absolute;
@@ -88,29 +117,33 @@ h1 {
 }
 .figure1 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     grid-gap: 10px;
 }
 figure img {
     width: 150px;
     height: 80%;
-    border: 5px black;
-    padding: 3px;
+    border: 3px black;
 }
 figcaption {
     margin-top: 8px;
     font-size: small;
     font-family: var(--body-font);
+    text-align: justify;
 }
 footer {
     background-color: var(--secondary-color);
     display: grid;
+    border: 3px black;
     grid-template-columns: 600px repeat(3, 1fr);
     grid-column-start: end;
     text-align: center;
 }
 footer .socialmedia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-start: end;
 
 }
 footer .socialmedia img {
