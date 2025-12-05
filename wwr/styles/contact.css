@@ -69,12 +69,15 @@ button{
 fieldset, textarea {
     width: 300px;
     align-items: flex-end;
-
+}
+.form-item {
+    display: grid;
+    align-items: left;
 }
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    space
+    grid-gap: 10px;
 }
 section1 img {
     float: right;
