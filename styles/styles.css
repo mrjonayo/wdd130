@@ -3,7 +3,7 @@ nav {
     padding: 10px;
 }
 nav a{
-    color: black;
+    color: #fff;
     display: block;
     padding: 20px;
 }
@@ -19,4 +19,10 @@ img{
 }
 p{
     padding: 10px;
+}
+footer {
+    background-color: darkblue;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
