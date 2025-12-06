@@ -45,12 +45,12 @@ h1, h2 {
     padding: 20px;
     color: white;
 }
-nav, p, section, article {
+nav, p {
     margin: 16px;
     padding: 8px;
 }
-section1 {
-
+h2 {
+    width: 840px;
 }
 section1 img {
     float: right;
@@ -73,7 +73,6 @@ h1 {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
@@ -83,7 +82,7 @@ h1 {
     position: absolute;
     padding: 10px;
     top: 60%;
-    text-align: center;
+    text-align: justify;
     color: white;
     opacity: 0.7;
     background-color: var(--accent1-color);
@@ -91,15 +90,15 @@ h1 {
 .hero article img {
     float: right;
     width: 125px;
-    border: 3px;
-    padding: 3px
-    border: 4px black;
+    border: 3px #fff;
+    padding: 5px
 }
 .figure1 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-content: space-between;
     grid-gap: 10px;
+    padding-bottom: 20px;
 }
 figure img {
     width: 150px;
