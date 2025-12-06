@@ -14,6 +14,7 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    width: 840px;
 }
 header, main, footer {
     width: 840px;
@@ -38,75 +39,41 @@ nav {
     justify-content: space-evenly;
     gap: 20px;
 }
-h1, h2 {
+
+h {
     font-family: var(--heading-font);
     background-color: var(--accent1-color);
     text-align: center;
     padding: 20px;
     color: white;
 }
-nav, p, section, section1, article {
-    margin: 16px;
-    padding: 8px;
-}
-section1 img {
-    float: right;
-    width: 125px;
-    border: 3px;
-}
-
-.sociamedia a {
-    text-decoration: none;
-}
-.hero {
-    position: relative;
-}
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: bisque;
-}
-.hero article {
-    position: absolute;
+section {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
     padding: 10px;
-    top: 60%;
-    text-align: center;
-    color: white;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
 }
-.hero article img {
-    float: right;
-    width: 125px;
-    border: 3px;
-    padding: 3px
-    border: 4px black;
+section img {
+    width: 820px;
+    height: auto;
+    border: 2px black;
 }
-.figure1 {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: space-between;
-    grid-gap: 10px;
+table {
+    width: 840px;
+    border: 2px solid rgb(140 140 140);
 }
-figure img {
-    width: 150px;
-    height: 80%;
-    border: 5px black;
-    padding: 3px;
+th {
+    background-color: black;
+    color: #fff;
 }
-figcaption {
-    margin-top: 8px;
-    font-size: small;
-    font-family: var(--body-font);
+td {
+    border: 1px solid rgb(160 160 160);
+
 }
 footer {
     background-color: var(--secondary-color);
     display: grid;
+    padding: 20px;
     grid-template-columns: 600px repeat(3, 1fr);
     grid-column-start: end;
     text-align: center;
@@ -117,4 +84,7 @@ footer .socialmedia {
 footer .socialmedia img {
     width: 20px;
     height: 20px;
+}
+.sociamedia a {
+    text-decoration: none;
 }
