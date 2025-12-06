@@ -20,3 +20,8 @@ img{
 p{
     padding: 10px;
 }
+footer {
+    padding: 10px;
+    background-color: darkblue;
+    color: #ffff;
+}
