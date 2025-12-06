@@ -44,11 +44,11 @@ h1, h2 {
     text-align: center;
     padding: 20px;
 }
-nav, section, section1, article {
+nav, footer p {
     margin: 16px;
     padding: 8px;
 }
-p1, p {
+p {
     position: relative;
     text-align: center;
 }
@@ -143,13 +143,10 @@ footer {
     grid-column-start: end;
     text-align: center;
 }
-footer .socialmedia {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-start: end;
-
-}
 footer .socialmedia img {
     width: 20px;
     height: 20px;
+}
+.sociamedia a {
+    text-decoration: none;
 }

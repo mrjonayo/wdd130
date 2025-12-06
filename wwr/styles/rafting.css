@@ -56,6 +56,7 @@ section1 img {
     float: right;
     width: 125px;
     border: 3px;
+    padding-top: 10px;
 }
 
 .sociamedia a {
@@ -96,8 +97,8 @@ h1 {
 .figure1 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    justify-content: space-between;
-    grid-gap: 10px;
+    justify-content: space-evenly;
+    grid-gap: 12px;
     padding-bottom: 20px;
 }
 figure img {
