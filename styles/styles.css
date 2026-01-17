@@ -8,9 +8,23 @@ nav {
 
 }
 
+nav a {
+    color: bisque;
+    padding: 10px;
+    display: block;
+}
+
 h1 {
     padding: 10px;
+    color: black;
     text-align: center;
+}
+
+main img {
+    width: 800px;
+    height: auto;
+    border: 5px;
+    box-shadow: 4px;
 }
 
 aside {
