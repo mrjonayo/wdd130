@@ -1,0 +1,28 @@
+main {
+    max-width: 840px;
+}
+
+aside {
+    width: 20rem;
+    margin: 10px;
+    border: 2px solid gray;
+    padding: 10px;
+    background-color: blanchedalmond;
+    color: black;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+p {
+    padding: 0;
+}
+
+footer {
+    margin-top: 10px;
+    border-top: 5px black;
+    text-align: center;
+}
