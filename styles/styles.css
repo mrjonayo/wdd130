@@ -2,6 +2,17 @@ main {
     max-width: 840px;
 }
 
+nav {
+    background-color: antiquewhite;
+    padding: 20px;
+
+}
+
+h1 {
+    padding: 10px;
+    text-align: center;
+}
+
 aside {
     width: 20rem;
     margin: 10px;
