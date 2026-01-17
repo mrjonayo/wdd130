@@ -2,6 +2,10 @@ main {
     max-width: 840px;
 }
 
+header {
+    width: 840px;
+}
+
 nav {
     background-color: antiquewhite;
     padding: 20px;
@@ -9,7 +13,7 @@ nav {
 }
 
 nav a {
-    color: bisque;
+    color: black;
     padding: 10px;
     display: block;
 }
@@ -29,7 +33,7 @@ main img {
 }
 
 aside {
-    width: 20rem;
+    width: 820px;
     margin: 10px;
     border: 2px solid gray;
     padding: 10px;
@@ -48,7 +52,10 @@ p {
 }
 
 footer {
+    width: 840px;
     margin-top: 10px;
     border-top: 5px black;
     text-align: center;
+    padding: 10px;
+    background-color: bisque;
 }
