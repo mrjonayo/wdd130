@@ -7,7 +7,7 @@
 :root {
     --primary-color: #0A2A43;
     /* Navy Blue */
-    --secondary-color: #4DA6FF;
+    /* --secondary-color: #4DA6FF; */
     /* Sky Blue */
     --accent1-color: #F15A29;
     /* River Orange */
@@ -79,7 +79,7 @@ h2 {
     padding: 16px;
 }
 
-article {
+.hero article {
     position: absolute;
     background-color: var(--primary-color);
     bottom: 20px;
