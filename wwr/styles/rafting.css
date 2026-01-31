@@ -6,15 +6,40 @@
 
 :root {
     --primary-color: #0A2A43;
-    /* Navy Blue */
-    /* --secondary-color: #4DA6FF; */
-    /* Sky Blue */
     --accent1-color: #F15A29;
-    /* River Orange */
     --accent2-color: #2E7D32;
-    /* Forest Green */
     --heading-font: 'Montserrat', sans-serif;
     --body-font: 'Open Sans', sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr;
+    align-items: center;
+}
+
+section img {
+    width: 150px;
+    height: 100px;
+    margin-top: 30px;
+
+}
+
+.hist {
+    display: flex;
+    flex-direction: rows;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: large;
+    justify-content: space-between;
 }
 
 body {
@@ -46,11 +71,48 @@ p,
 article {
     margin: 16px;
     padding: 8px;
-    font-size: small;
+    font-size: medium;
 }
 
-.socialmedia a {
+figure img {
+    width: 150px;
+    height: 100px;
+    padding: 3px;
+    margin: 5px;
+    border: 1px solid #fff;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.fig {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+footer {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 700px 1fr 1fr;
+    grid-column-start: end;
+    place-items: center;
+
+}
+
+.socialmedia {
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.socialmedia img {
+    width: 35px;
+    height: 35px;
 }
 
 .hero {
@@ -65,30 +127,29 @@ article {
 
 h1 {
     position: absolute;
-    top: 20px;
+    top: 100px;
     width: 100%;
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent2-color);
-    color: #ffff;
+    color: black;
 }
 
 h2 {
-    background-color: var(--accent2-color);
-    padding: 16px;
+    padding: 10px;
+    margin: 10px;
 }
 
 .hero article {
     position: absolute;
     background-color: var(--primary-color);
-    bottom: 20px;
+    top: 170px;
 
 }
 
 .hero article img {
     float: right;
     width: 125px;
-    margin: 10px;
+    margin-top: 30px;
     border: 1px solid black;
 }

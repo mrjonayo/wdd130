@@ -10,23 +10,47 @@
 
 }
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav {
     background-color: antiquewhite;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 nav a {
     color: black;
     padding: 10px;
     display: block;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 h1 {
-    /* display: block; */
+    display: block;
     /* position: absolute; */
     padding: 10px;
     color: black;
     text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1em;
 }
 
 main img {
@@ -43,10 +67,8 @@ aside {
     width: 20em;
     height: auto;
     position: relative;
-    /* position: relative; */
-    /* margin: 10px; */
-    /* border: 2px solid gray; */
-    /* padding: 10px; */
+    grid-column: 1/2;
+    grid-row: 1/2;
     text-align: center;
 }
 
@@ -67,12 +89,13 @@ footer {
     border-top: 1px solid rgba(0, 0, 0, .1);
     padding: 10px;
     text-align: center;
-    background-color: bisque;
+    /* background-color: bisque; */
     color: black;
 }
 
 /* Class Selectors */
 .box {
+    max-width: stretch;
     margin: 1rem;
     border: 1rem;
     padding: 40px;
