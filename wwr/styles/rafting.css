@@ -7,7 +7,7 @@
 :root {
     --primary-color: #0A2A43;
     --accent1-color: #F15A29;
-    --accent2-color: #2E7D32;
+    /* --accent2-color: #2E7D32; */
     --heading-font: 'Montserrat', sans-serif;
     --body-font: 'Open Sans', sans-serif;
 }
@@ -27,7 +27,7 @@ section img {
 
 .hist {
     display: flex;
-    flex-direction: rows;
+    flex-direction: row;
 }
 
 nav a {
