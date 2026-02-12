@@ -25,11 +25,6 @@ section img {
 
 }
 
-.hist {
-    display: flex;
-    flex-direction: row;
-}
-
 nav a {
     text-decoration: none;
 }
@@ -74,26 +69,6 @@ article {
     font-size: medium;
 }
 
-figure img {
-    width: 150px;
-    height: 100px;
-    padding: 3px;
-    margin: 5px;
-    border: 1px solid #fff;
-}
-
-figcaption {
-    text-align: center;
-}
-
-.fig {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
 footer {
     text-align: center;
     display: grid;
@@ -115,21 +90,10 @@ footer {
     height: 35px;
 }
 
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 h1 {
-    position: absolute;
     top: 100px;
     width: 100%;
-    padding: 16px;
+    padding: 10px;
     text-align: center;
     opacity: 0.7;
     color: black;
@@ -140,16 +104,70 @@ h2 {
     margin: 10px;
 }
 
-.hero article {
-    position: absolute;
-    background-color: var(--primary-color);
-    top: 170px;
-
+.address {
+    text-align: center;
 }
 
-.hero article img {
-    float: right;
-    width: 125px;
-    margin-top: 30px;
-    border: 1px solid black;
+.address p {
+    margin: 2px;
+}
+
+form {
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin: 3px 0 4px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+fieldset {
+    margin: 15px 0;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background: #0077ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005fcc;
+}
+
+.figure1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
