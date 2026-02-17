@@ -6,8 +6,7 @@
 
 :root {
     --primary-color: #0A2A43;
-    --accent1-color: #F15A29;
-    /* --accent2-color: #2E7D32; */
+    --accent1-color: #FBBF24;
     --heading-font: 'Montserrat', sans-serif;
     --body-font: 'Open Sans', sans-serif;
 }
@@ -32,6 +31,7 @@ section img {
 
 nav a {
     text-decoration: none;
+    color: var(--primary-color);
 }
 
 ul {
@@ -44,7 +44,7 @@ ul {
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
 }
 
 header,
@@ -62,7 +62,7 @@ header img {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: #0F172A;
     text-align: center;
 }
 
@@ -144,6 +144,7 @@ h2 {
     position: absolute;
     background-color: var(--primary-color);
     top: 170px;
+    color: #fff;
 
 }
 

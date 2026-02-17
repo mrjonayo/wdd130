@@ -6,8 +6,7 @@
 
 :root {
     --primary-color: #0A2A43;
-    --accent1-color: #F15A29;
-    /* --accent2-color: #2E7D32; */
+    --accent-color: #FBBF24;
     --heading-font: 'Montserrat', sans-serif;
     --body-font: 'Open Sans', sans-serif;
 }
@@ -25,13 +24,9 @@ section img {
 
 }
 
-.hist {
-    display: flex;
-    flex-direction: row;
-}
-
 nav a {
     text-decoration: none;
+    color: var(--primary-color);
 }
 
 ul {
@@ -44,7 +39,7 @@ ul {
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
 }
 
 header,
@@ -57,13 +52,6 @@ footer {
 header img {
     width: 80px;
     height: 80px;
-}
-
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    text-align: center;
 }
 
 nav,
@@ -97,6 +85,8 @@ footer {
 
 h {
     padding: 10px;
+    font-size: larger;
+    color: #0F172A;
 }
 
 section {
@@ -113,13 +103,38 @@ section img {
 }
 
 table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
     width: 100%;
-    border: 1px solid black;
-    margin: 10px;
-    padding: 10px;
+    letter-spacing: 1px;
+}
+
+th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+    text-align: center;
 }
 
 thead,
 tfoot {
-    background-color: var(--primary-color);
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 16px 28px;
+    background-color: #22D3EE;
+    color: var(--text);
+    font-weight: 600;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: .25s ease;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
 }
