@@ -62,11 +62,10 @@ h3 {
     font-size: larger;
 }
 
-nav,
-{
-margin: 16px;
-padding: 8px;
-font-size: medium;
+nav {
+    margin: 16px;
+    padding: 8px;
+    font-size: medium;
 }
 
 .hero {
